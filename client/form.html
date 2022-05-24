@@ -14,19 +14,24 @@
 		<nav class="navbar navbar-expand-lg">
 			<div class="container justify-content-center">
 				<a href="#" class="navbar-brand">8 вариант БОНСАЙ</a>
-				<button type="button" class="btn btn-dark px-3 m-2">Открыть форму</button>
+				<button type="button" class="btn btn-dark px-3 m-2 openBtn">Открыть форму</button>
 			</div>
 		</nav>
 	</header>
 	<main>
 	<form action="POST">
+		
 		<div class="form-group">
+			<legend>Опишите свое растение</legend>
 			<label for="textInput">Вид растения</label>
 			<input type="text" class="form-control" id="textInput" placeholder="Многоствольный">
+			<p class="missingValue">Поле должно быть заполнено</p>
+			<p class="rusValue">Только русские буквы</p>
 		</div>
 		<div class="form-group">
 			<label for="AgeInput">Возарст растения</label>
 			<input type="number" class="form-control" id="AgeInput">
+			<p class="missingValue">Поле должно быть заполнено</p>
 		</div>
 		<div class="form-group">
 			<label for="frequencyInput">Как часто поливаете</label>
@@ -40,19 +45,20 @@
 			<p class="p-form">Вид горшка</p>
 			<div class="form-check">
 				<label class="form-check-label">
-					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+					<input type="radio" class="form-check-input" name="optionsRadios" id="form1" value="Круглый" checked>
 					Круглый
 				</label>
 			</div>
 			<div class="form-check">
 				<label class="form-check-label">
-					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+					<input type="radio" class="form-check-input" name="optionsRadios" id="form2" value="Квадратный">
 					Квадратный 
 				</label>
 			</div>
 		</fieldset>
 		<div class="form-group">
-			<button type="submit" class="btn btn-primary">Submit</button>
+			<button type="submit" class="btn btn-primary sendBtn">Отправить</button>
+			<button type="reset" class="btn btn-danger cancelBtn">Отмена</button>
 		</div>
 	</form>
 	</main>
@@ -61,6 +67,7 @@
 			<span>Селезнев Владислав 201-323</span>
 		</div>
 	</footer>
+	<script src="./scripts/frontend.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

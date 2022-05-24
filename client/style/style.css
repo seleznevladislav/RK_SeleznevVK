@@ -1,13 +1,20 @@
 body{
-	background-color: rgb(0,0,0,.2);
+	background-color: rgb(0,0,0,.1);
 }
 form{
+	display: block;
+	opacity: 0;
+	transition: 1s;
 	padding: 40px 0px 20px 0px;
 	max-width: 30%;
 	border-radius: 15px;
 	margin: 7% auto 0px auto;
 	background-color: white;
 	box-shadow: 0px 0px 3px black;
+}
+form.create{
+	opacity:1;
+	transition: 1s;
 }
 .form-group{
 	max-width: 70%;
@@ -28,4 +35,15 @@ footer{
 	width: 100%;
 	position: absolute;
 	bottom: 0;
+}
+.warning{
+	border:  1px solid red;
+}
+.missingValue{
+	display: none;
+	color: red;
+}
+.rusValue{
+	display: none;
+	color: red;
 }
