@@ -22,15 +22,15 @@
 	<form action="POST">
 		
 		<div class="form-group">
-			<legend>Опишите свое растение</legend>
+			<p class="legend">Опишите свое растение</p>
 			<label for="textInput">Вид растения</label>
-			<input type="text" class="form-control" id="textInput" placeholder="Многоствольный">
+			<input type="text" class="form-control" id="textInput" placeholder="Многоствольный" required>
 			<p class="missingValue">Поле должно быть заполнено</p>
 			<p class="rusValue">Только русские буквы</p>
 		</div>
 		<div class="form-group">
 			<label for="AgeInput">Возарст растения</label>
-			<input type="number" class="form-control" id="AgeInput">
+			<input type="number" class="form-control" id="AgeInput" required>
 			<p class="missingValue">Поле должно быть заполнено</p>
 		</div>
 		<div class="form-group">
